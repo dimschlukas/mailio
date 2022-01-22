@@ -137,3 +137,7 @@ void setup()
 
   go_to_sleep();
 }
+
+void loop()
+{
+}
