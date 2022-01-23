@@ -12,8 +12,8 @@ This is a simple arduino script that notifies if some new mail is delivered to t
 
 ## You need
 ### Hardware
-- [Lolin D32 microcontroller](https://www.wemos.cc/en/latest/d32/d32.html)[^1] (Or use your own microcontroller. PIN mapping may differ.)[^2] (Would be happy if anyone attributes tested hardware.)
-- NO-switch for detecting opening of the mailbox door/hatch. I used [this](https://www.farnell.com/datasheets/2791160.pdf) reed-switch.
+- [Lolin D32 microcontroller](https://www.wemos.cc/en/latest/d32/d32.html)[^1] (Or use your own ESP32. Pin mapping may differ.)[^2] (Would be happy if anyone attributes tested hardware.)
+- NC-switch for detecting opening of the mailbox door/hatch. I used [this](https://www.farnell.com/datasheets/2791160.pdf) reed-switch with the corresponding actuator magnet.
 - 1S lipo with about 300-1000mA
 - 5V solar panel
 - Breadboard, cables, enclosure and maybe some soldering stuff
@@ -33,6 +33,9 @@ git clone https://github.com/dimschlukas/mailio.git
   - You need a Telegram bot API token. Follow [this guide](https://core.telegram.org/bots#3-how-do-i-create-a-bot) to acquire a token. And use an IDBot to get your chats/channels id.
   - Comment out unwanted optional features
 - Flash microcontroller
+
+## Schematic (simple)
+![Fritzing breadboard](images/mailio_bb.png)
 
 [^1]: Why a ESP32 for this simple task? The Lolin D32 has a built in battery charger and a JST connector to connet to a battery. And it was the board that was laying around at home.
 [^2]: You need RTC GPIO pins in order to use deep-sleep on your ESP32.
