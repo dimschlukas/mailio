@@ -37,5 +37,10 @@ git clone https://github.com/dimschlukas/mailio.git
 ## Schematic (simple)
 ![Fritzing breadboard](images/mailio_bb.png)
 
+## Pictures
+|![Mailbox](images/mailbox_with_solar_panel.jpg)|![reed-switch](images/reed-switch.jpg)|
+|---|---|
+|![ESP in enclosure](images/esp_with_enclosure.jpg)|![PCB breadboard](images/PCB_breadboard.jpg)|
+
 [^1]: Why a ESP32 for this simple task? The Lolin D32 has a built in battery charger and a JST connector to connet to a battery. And it was the board that was laying around at home.
 [^2]: You need RTC GPIO pins in order to use deep-sleep on your ESP32.
